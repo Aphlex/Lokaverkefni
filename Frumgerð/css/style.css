@@ -3,6 +3,13 @@ body{
 	color:black;
     background-color:;
 }
+
+.container{
+border:1px solid orange;
+width:100em;
+
+}
+
 .pure-g,div ,article
         {
             border:1px solid blue;
@@ -28,7 +35,7 @@ body{
     width:100%;
 }
 
-.h1_tonleikar_2015{
+.text_center{
     text-align:center;
    
 }
@@ -44,12 +51,17 @@ body{
 }
 
 .margin_panta_dagskra{
-    margin-left:1em;}
+    margin-left:1em;
+border-radius:5px;
+}
     
 
 .image_pos_harpa{
     margin-left:1em;
+}
 
+.footer{
+    margin-left:9em;
 }
 
 
