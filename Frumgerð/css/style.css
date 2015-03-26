@@ -11,9 +11,11 @@ body{
                 box-sizing: border-box;
         }
 
-        p{
+        p, h1, h2{
             
-            padding:10px;
+            padding-left:1em;
+            padding-right:1em;
+
         }
 
         img{
@@ -22,24 +24,32 @@ body{
     display: inline-block;
 }
 
+.pure-table{
+    width:100%;
+}
+
 .h1_tonleikar_2015{
-    margin-left:12em;
+    text-align:center;
+   
 }
 
 .dagskra_pos{
-    margin-left:10em;
+    margin-left:2em;
+    
 }
 
 .panta_pos{
     margin-left:7em;
+    
 }
 
 .margin_panta_dagskra{
-    margin-left:3.3em;
-}
+    margin-left:1em;}
+    
 
 .image_pos_harpa{
     margin-left:1em;
+
 }
 
 
