@@ -1,6 +1,7 @@
 
 body{
-	color:red;
+	color:black;
+    background-color:;
 }
 .pure-g,div ,article
         {
@@ -10,11 +11,35 @@ body{
                 box-sizing: border-box;
         }
 
+        p{
+            
+            padding:10px;
+        }
+
         img{
     max-width:100%;
     height:auto;
     display: inline-block;
 }
 
+.h1_tonleikar_2015{
+    margin-left:12em;
+}
+
+.dagskra_pos{
+    margin-left:10em;
+}
+
+.panta_pos{
+    margin-left:7em;
+}
+
+.margin_panta_dagskra{
+    margin-left:3.3em;
+}
+
+.image_pos_harpa{
+    margin-left:1em;
+}
 
 
