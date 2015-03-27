@@ -1,14 +1,14 @@
 
 body{
-	color:black;
-    background-color:;
+	color:rgb(46,207,25);
+ 
 }
 
 
 .pure-g,div ,article
         {
             border:1px solid blue;
-            background-color:brown;
+               background-color:rgb(24,36,46);
 margin:auto;
             -webkit-box-sizing: border-box;
                 -moz-box-sizing: border-box;
