@@ -163,7 +163,9 @@
 
         <div class="pure-control-group">
             <label for="simanumer">Símanúmer</label>
-            <input class="pure-input-rounded" type="text" placeholder="Símanúmer" maxlength="7" required> 
+            <!-- regexið Gáir hvort að símanúmer innihaldi tölu frá 0 og upp í 9 á hvern staf. gerir það 7 sinnum því það eru 7 stafir, gáir svo líka hvort að það séu fleiri en 6 tölustafir í reitnum því að venjulegt símanúmer er alltaf 7 stafir--> 
+            <input class="pure-input-rounded" type="text" placeholder="Símanúmer" maxlength="7" pattern=".{6,}[0-9]{1,7}"
+            stafir-- title="Ógilt símanúmer" required> 
         </div>
 
         <div class="pure-control-group">
@@ -178,20 +180,28 @@
 
         <div class="pure-control-group">
             <label for="kennitala">Kennitala</label>
-            <input class="pure-input-rounded" type="text" placeholder="Kennitala" maxlength="10" required>
+            <!-- regexið Gáir hvort að símanúmer innihaldi tölu frá 0 og upp í 9 á hvern staf. gerir það 10 sinnum því það eru 10 stafir það gáir svo líka hvort að reiturinn innihaldi fleiri en 9 stafi því kennitala er alltaf 10 stafir án bandstriks--> 
+            <input class="pure-input-rounded" type="text" placeholder="Kennitala" maxlength="10" pattern=".{9,}[0-9]{1,10}"required
+            pattern="[0-9]" title="Ógild kennitala">
         </div>
 
         <div class="pure-control-group">
             <label for="Miðafjöldi">Miðafjöldi</label>
-            <input class="pure-input-rounded" type="number" max="100" placeholder="Miðafjöldi" required>
+            <input class="pure-input-rounded" type="number" min="1" max="100" placeholder="Miðafjöldi" required>
         </div>
 
 
         <div class="pure-control-group">
-            <label for="dagsetning">Dagsetning</label>
-            <input class="pure-input-rounded" type="number" min="1" max="31"  placeholder="Dagur">
-            <input class="pure-input-rounded" type="number" min="1" max="12"  placeholder="Mánuður">
-            <input class="pure-input-rounded" type="number" min="2015" max="2015" value="2015">
+             <label for="date">Dagsetning, 1., 8. eða 15. apríl: </label>
+      <select>
+        <option value="1">1</option>
+        <option value="8">8</option>
+        <option value="15">15</option>
+       </select> 
+    
+      <select>
+        <option value="4">4</option>   
+       </select> 
         </div>
  
 

@@ -64,19 +64,33 @@ border-radius:5px;
 margin-left:2em;
 }
 
+
+@-webkit-keyframes example {
+    0%   {background-color:rgb(178,222,67); left:0px; top:-500px;}
+    25%  {background-color:rgb(178,222,67); left:0px; top:0px;}
+    50%  { left:0px; top:0px;}
+    75%  {background-color:yellow; left:0px; top:0px;}
+    100% {background-color:yellow; left:0px; top:0px;}
+}
+
+
+
 @keyframes example {
     0%   {background-color:rgb(178,222,67); left:0px; top:-500px;}
     25%  {background-color:rgb(178,222,67); left:0px; top:0px;}
-    50%  { top:0px;}
+    50%  { left:0px; top:0px;}
     75%  {background-color:yellow; left:0px; top:0px;}
     100% {background-color:yellow; left:0px; top:0px;}
 }
 
 .dropdown{
+    text-align:center;
     border-radius:5px;
    background-color:yellow;
     position: relative;
-    animation-name: example;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 10s;
+     animation-name: example;
     animation-duration: 10s;
     color:red;
 }
@@ -86,13 +100,36 @@ margin-left:2em;
 }
 
 
+
+
 @media screen and (max-width: 35.5em){
      
      div{
-        font-size:1em;
-        line-height:2em;
+        font-size:1.2em;
+        line-height:1.5em;
      }
 
 }
 
+@media screen and (min-width: 48em){
+
+   div{
+        font-size:1.05em;
+        line-height:1.5em;
+     } 
+}
+
+@media screen and (min-width: 64em){
+    div{
+        font-size:1em;
+        line-height:1.5em;
+     } 
+}
+
+@media screen and (min-width: 80em){
+   div{
+       
+        line-height:1.5em;
+     } 
+}
 
