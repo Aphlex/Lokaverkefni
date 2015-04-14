@@ -64,5 +64,35 @@ border-radius:5px;
 margin-left:2em;
 }
 
+@keyframes example {
+    0%   {background-color:rgb(178,222,67); left:0px; top:-500px;}
+    25%  {background-color:rgb(178,222,67); left:0px; top:0px;}
+    50%  { top:0px;}
+    75%  {background-color:yellow; left:0px; top:0px;}
+    100% {background-color:yellow; left:0px; top:0px;}
+}
+
+.dropdown{
+    border-radius:5px;
+   background-color:yellow;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    color:red;
+}
+
+.dropdown:hover{
+    opacity:0.5;
+}
+
+
+@media screen and (max-width: 35.5em){
+     
+     div{
+        font-size:1em;
+        line-height:2em;
+     }
+
+}
 
 
